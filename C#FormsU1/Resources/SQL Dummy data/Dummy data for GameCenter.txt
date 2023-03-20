@@ -1,0 +1,146 @@
+INSERT INTO Employee (employeeId, name, adress, phonenumber, email, hireDate, jobTitle)
+VALUES
+('Anställd id 1', 'Arvid', 'Klostergatan', '046-000-11', 'arvid@mail.se', '2023-02-15', 'pleb'),
+('Anställd id 2', 'Göran', 'Vapenkroken', '046-000-12', 'göran@mail.se', '2023-01-29', 'Security Guard'),
+('Anställd id 3', 'Sören', 'ST Petri Kyrkogata', '046-000-13', 'Sören@mail.se', '2023-01-29', 'Manager'),
+('Anställd id 4', 'Anna', 'Ulrikedal', '046-000-14', 'anna@mail.se', '2023-02-24', 'Security Guard'),
+('Anställd id 5', 'Alex', 'Vildanden', '046-000-15', 'alex@mail.se', '2023-01-31', 'Cashier'),
+('Anställd id 6', 'Alexa', 'Södergatan', '046-000-16', 'alexa@mail.se', '2023-01-05', 'intern');
+
+INSERT INTO Customer (customerId, name, adress, phonenumber, email, loyaltyLevel)
+VALUES
+('Kund id 1', 'John', '1 Main St', '076-000-001', 'john@mail.se', 1),
+('Kund id 2', 'Jane', '2 Main St', '076-000-002', 'jane@mail.se', 1),
+('Kund id 3', 'Jim', '3 Main St', '076-000-003', 'jim@mail.se', 1),
+('Kund id 4', 'Janet', '4 Main St', '076-000-004', 'janet@mail.se', 1),
+('Kund id 5', 'Michael', '5 Main St', '076-000-005', 'michael@mail.se', 1),
+('Kund id 6', 'Emily', '6 Main St', '076-000-006', 'emily@mail.se', 1),
+('Kund id 7', 'David', '7 Main St', '076-000-007', 'david@mail.se', 1),
+('Kund id 8', 'Amy', '8 Main St', '076-000-008', 'amy@mail.se', 1),
+('Kund id 9', 'Brian', '9 Main St', '076-000-009', 'brian@mail.se', 1),
+('Kund id 10', 'Megan', '10 Main St', '076-000-010', 'megan@mail.se', 1);
+
+INSERT INTO Computer (computerId, cpu, gpu, ram, dataStorage, reserved)
+VALUES
+('Dator id 1', 'Intel Core i7', 'Nvidia GeForce RTX 3070', 16, '1TB SSD', 0),
+('Dator id 2', 'Intel Core i9', 'Nvidia GeForce RTX 3080', 32, '2TB SSD', 0),
+('Dator id 3', 'AMD Ryzen 9', 'AMD Radeon RX 6000 Series', 16, '500GB SSD', 0),
+('Dator id 4', 'Intel Core i5', 'Nvidia GeForce GTX 1650', 8, '512GB SSD', 0),
+('Dator id 5', 'AMD Ryzen 7', 'AMD Radeon RX 5700 XT', 16, '1TB HDD', 0),
+('Dator id 6', 'Intel Core i3', 'Intel UHD Graphics 630', 4, '256GB SSD', 0),
+('Dator id 7', 'AMD Ryzen 5', 'AMD Radeon RX 580', 8, '1TB HDD', 0),
+('Dator id 8', 'Intel Pentium Gold', 'Intel UHD Graphics 610', 4, '128GB SSD', 0),
+('Dator id 9', 'AMD A12', 'AMD Radeon Vega 8', 8, '512GB SSD', 0),
+('Dator id 10', 'Intel Celeron', 'Intel HD Graphics 400', 2, '256GB HDD', 0);
+
+INSERT INTO Game (gameId, computerId, title, genre)
+VALUES
+('Spel id 1', 'Dator id 1', 'Call of Duty: Black Ops Cold War', 'FPS'),
+('Spel id 2', 'Dator id 2', 'Red Dead Redemption 2', 'Action-Adventure'),
+('Spel id 3', 'Dator id 3', 'The Witcher 3: Wild Hunt', 'RPG'),
+('Spel id 4', 'Dator id 4', 'Grand Theft Auto V', 'Action-Adventure'),
+('Spel id 5', 'Dator id 5', 'The Legend of Zelda: Breath of the Wild', 'Action-Adventure'),
+('Spel id 6', 'Dator id 6', 'Call of Duty: Black Ops Cold War', 'FPS'),
+('Spel id 7', 'Dator id 7', 'Red Dead Redemption 2', 'Action-Adventure'),
+('Spel id 8', 'Dator id 8', 'The Witcher 3: Wild Hunt', 'RPG'),
+('Spel id 9', 'Dator id 9', 'Grand Theft Auto V', 'Action-Adventure'),
+('Spel id 10', 'Dator id 10', 'The Legend of Zelda: Breath of the Wild', 'Action-Adventure'),
+('Spel id 11', 'Dator id 1', 'Overwatch', 'FPS'),
+('Spel id 12', 'Dator id 2', 'Minecraft', 'Sandbox'),
+('Spel id 13', 'Dator id 3', 'Final Fantasy VII Remake', 'RPG'),
+('Spel id 14', 'Dator id 4', 'Minecraft', 'Sandbox'),
+('Spel id 15', 'Dator id 5', 'Final Fantasy VII Remake', 'RPG'),
+('Spel id 16', 'Dator id 6', 'Overwatch', 'FPS'),
+('Spel id 17', 'Dator id 7', 'Minecraft', 'Sandbox'),
+('Spel id 18', 'Dator id 8', 'Final Fantasy VII Remake', 'RPG'),
+('Spel id 19', 'Dator id 9', 'Minecraft', 'Sandbox'),
+('Spel id 20', 'Dator id 10', 'Final Fantasy VII Remake', 'RPG'),
+('Spel id 21', 'Dator id 1', 'Fortnite', 'Battle Royale'),
+('Spel id 22', 'Dator id 2', 'Apex Legends', 'Battle Royale'),
+('Spel id 23', 'Dator id 3', 'Fortnite', 'Battle Royale'),
+('Spel id 24', 'Dator id 4', 'Apex Legends', 'Battle Royale'),
+('Spel id 25', 'Dator id 5', 'Fortnite', 'Battle Royale'),
+('Spel id 26', 'Dator id 6', 'Apex Legends', 'Battle Royale'),
+('Spel id 27', 'Dator id 7', 'Fortnite', 'Battle Royale'),
+('Spel id 28', 'Dator id 8', 'Apex Legends', 'Battle Royale'),
+('Spel id 29', 'Dator id 9', 'Fortnite', 'Battle Royale'),
+('Spel id 30', 'Dator id 10', 'Apex Legends', 'Battle Royale');
+
+INSERT INTO Login (loginId, password, customerId, employeeId, accessLevel)
+VALUES
+('Kund anv 1', 'k1123', 'Kund id 1', null, 'Customer'),
+('Kund anv 2', 'k2123', 'Kund id 2', null, 'Customer'),
+('Kund anv 3', 'k3123', 'Kund id 3', null, 'Customer'),
+('Kund anv 4', 'k4123', 'Kund id 4', null, 'Customer'),
+('Kund anv 5', 'k5123', 'Kund id 5', null, 'Customer'),
+('Kund anv 6', 'k6123', 'Kund id 6', null, 'Customer'),
+('Kund anv 7', 'k7123', 'Kund id 7', null, 'Customer'),
+('Kund anv 8', 'k8123', 'Kund id 8', null, 'Customer'),
+('Kund anv 9', 'k9123', 'Kund id 9', null, 'Customer'),
+('Kund anv 10', 'k10123', 'Kund id 10', null, 'Customer'),
+('Anställd anv 1', 'a1123', null, 'Anställd id 1', 'Admin'),
+('Anställd anv 2', 'a2123', null, 'Anställd id 2', 'Employee'),
+('Anställd anv 3', 'a3123', null, 'Anställd id 3', 'Employee'),
+('Anställd anv 4', 'a4123', null, 'Anställd id 4', 'Employee'),
+('Anställd anv 5', 'a5123', null, 'Anställd id 5', 'Employee'),
+('Anställd anv 6', 'a6123', null, 'Anställd id 6', 'Employee');
+
+INSERT INTO EmployeeSchedule (employeeId, shiftDate, name, shiftResponsibilities)
+VALUES
+('Anställd id 1', '2023-02-15', 'Arvid', 'Technician'),
+('Anställd id 1', '2023-02-16', 'Arvid', 'Customer Service'),
+('Anställd id 1', '2023-02-17', 'Arvid', 'Game Technician'),
+('Anställd id 2', '2023-02-15', 'Göran', 'Security Guard'),
+('Anställd id 2', '2023-02-16', 'Göran', 'Cashier'),
+('Anställd id 2', '2023-02-17', 'Göran', 'Janitor'),
+('Anställd id 3', '2023-02-15', 'Sören', 'Manager'),
+('Anställd id 3', '2023-02-16', 'Sören', 'Assistant Manager'),
+('Anställd id 3', '2023-02-17', 'Sören', 'Technician'),
+('Anställd id 4', '2023-02-15', 'Anna', 'Security Guard'),
+('Anställd id 4', '2023-02-16', 'Anna', 'Customer Service'),
+('Anställd id 4', '2023-02-17', 'Anna', 'Cashier'),
+('Anställd id 5', '2023-02-15', 'Alex', 'Cashier'),
+('Anställd id 5', '2023-02-16', 'Alex', 'Technician'),
+('Anställd id 5', '2023-02-17', 'Alex', 'Janitor'),
+('Anställd id 6', '2023-02-15', 'Alexa', 'Intern'),
+('Anställd id 6', '2023-02-16', 'Alexa', 'Technician'),
+('Anställd id 6', '2023-02-17', 'Alexa', 'Customer Service');
+
+INSERT INTO Reservation (computerId, timeDate, customerId, employeeId)
+VALUES
+('Dator id 1', '2023-03-01', 'Kund id 1', 'Anställd id 2'),
+('Dator id 2', '2023-03-02', 'Kund id 1', 'Anställd id 3'),
+('Dator id 3', '2023-03-03', 'Kund id 1', 'Anställd id 1'),
+('Dator id 4', '2023-03-04', 'Kund id 2', 'Anställd id 2'),
+('Dator id 5', '2023-03-05', 'Kund id 2', 'Anställd id 3'),
+('Dator id 6', '2023-03-06', 'Kund id 2', 'Anställd id 1'),
+('Dator id 7', '2023-03-07', 'Kund id 3', 'Anställd id 2'),
+('Dator id 8', '2023-03-08', 'Kund id 3', 'Anställd id 3'),
+('Dator id 10', '2023-03-10', 'Kund id 4', 'Anställd id 2'),
+('Dator id 1', '2023-03-11', 'Kund id 4', 'Anställd id 3'),
+('Dator id 2', '2023-03-12', 'Kund id 4', 'Anställd id 1'),
+('Dator id 3', '2023-03-13', 'Kund id 5', 'Anställd id 2'),
+('Dator id 4', '2023-03-14', 'Kund id 5', 'Anställd id 3'),
+('Dator id 5', '2023-03-15', 'Kund id 5', 'Anställd id 1'),
+('Dator id 6', '2023-03-16', 'Kund id 6', 'Anställd id 2'),
+('Dator id 7', '2023-03-17', 'Kund id 6', 'Anställd id 3'),
+('Dator id 8', '2023-03-18', 'Kund id 6', 'Anställd id 1'),
+('Dator id 9', '2023-03-19', 'Kund id 7', 'Anställd id 2'),
+('Dator id 10', '2023-03-20', 'Kund id 7', 'Anställd id 3'),
+('Dator id 1', '2023-03-21', 'Kund id 7', 'Anställd id 1'),
+('Dator id 2', '2023-03-22', 'Kund id 8', 'Anställd id 2'),
+('Dator id 3', '2023-03-23', 'Kund id 8', 'Anställd id 3'),
+('Dator id 4', '2023-03-24', 'Kund id 8', 'Anställd id 1'),
+('Dator id 3', '2023-03-01', 'Kund id 9', 'Anställd id 2'),
+('Dator id 6', '2023-03-02', 'Kund id 9', 'Anställd id 4'),
+('Dator id 7', '2023-03-03', 'Kund id 9', 'Anställd id 5'),
+('Dator id 8', '2023-03-04', 'Kund id 9', 'Anställd id 6'),
+('Dator id 10', '2023-03-05', 'Kund id 9', 'Anställd id 3'),
+('Dator id 2', '2023-03-06', 'Kund id 10', 'Anställd id 1'),
+('Dator id 4', '2023-03-07', 'Kund id 10', 'Anställd id 2'),
+('Dator id 5', '2023-03-08', 'Kund id 10', 'Anställd id 3'),
+('Dator id 9', '2023-03-09', 'Kund id 10', 'Anställd id 4'),
+('Dator id 1', '2023-03-10', 'Kund id 10', 'Anställd id 5');
+
+
+

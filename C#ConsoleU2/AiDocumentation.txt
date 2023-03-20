@@ -1,0 +1,40 @@
+﻿System Documentation for AIFutureDBConsoleApp
+Introduction
+AIFutureDBConsoleApp is a simple console application written in C# to demonstrate basic CRUD (Create, Read, Update, Delete) operations on a locally-hosted database. The application interacts with the "Person" table in the database, allowing users to manage person records through the command line.
+
+Database
+The database used in this application is a locally-hosted SQL Server database named "AIFutureDB". It contains a table called "Person" with the following columns:
+
+PersonID (int) - Primary key, auto-incrementing.
+FirstName (nvarchar) - First name of the person.
+LastName (nvarchar) - Last name of the person.
+BirthDate (date) - Birthdate of the person in the format yyyy-mm-dd.
+Email (nvarchar) - Email address of the person.
+Connection to the database is established using a connection string with Windows Authentication (Integrated Security).
+
+Application Structure
+The application consists of a single C# class, Program, which contains the Main method that drives the console application.
+
+The Main method handles user interaction by displaying a menu to choose an action (C)reate, (R)ead, (U)pdate, (D)elete, or (E)xit. It processes the user's input and performs the appropriate action by connecting to the database and executing relevant SQL commands.
+
+The application uses the System.Data.SqlClient namespace for interacting with the SQL Server database.
+
+Functionality
+Here's a brief overview of the different actions the application can perform:
+
+Create - Adds a new person to the "Person" table. The user is prompted to enter the person's first name, last name, birth date, and email. An INSERT SQL command is executed to add the record to the table.
+
+Read - Retrieves and displays all person records from the "Person" table. A SELECT SQL command is executed, and the result is printed to the console.
+
+Update - Updates an existing person's record in the "Person" table. The user is prompted to enter the person ID to update, as well as the new first name, last name, birth date, and email. An UPDATE SQL command is executed to modify the record in the table.
+
+Delete - Removes a person's record from the "Person" table. The user is prompted to enter the person ID to delete. A DELETE SQL command is executed to remove the record from the table.
+
+Exit - Terminates the application.
+
+The application continues to prompt the user for actions until the "Exit" option is selected.
+
+Getting Started
+To run the application, open the AIFutureDBConsoleApp solution in Visual Studio and press F5 or Ctrl + F5 to start the application. Follow the on-screen instructions to perform the desired actions.
+
+To modify the application or database, refer to the source code and SQL scripts used to create the database and tables. Make any necessary changes and recompile the application as needed.

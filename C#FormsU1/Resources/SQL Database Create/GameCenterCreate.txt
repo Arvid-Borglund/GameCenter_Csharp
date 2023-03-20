@@ -1,0 +1,72 @@
+CREATE TABLE Customer
+(
+  customerId VARCHAR(255) PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  adress VARCHAR(255) NOT NULL,
+  phonenumber VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  loyaltyLevel INT NOT NULL
+);
+
+CREATE TABLE Login
+(
+  loginId VARCHAR(255) PRIMARY KEY, 
+  password VARCHAR(255) NOT NULL,
+  customerId VARCHAR(255) NULL,
+  employeeId VARCHAR(255) NULL,
+  accessLevel VARCHAR(255) NOT NULL,
+  FOREIGN KEY (customerId) REFERENCES Customer(customerId) ON DELETE SET NULL,
+  FOREIGN KEY (employeeId) REFERENCES Employee(employeeId) ON DELETE SET NULL
+);
+
+CREATE TABLE Employee
+(
+  employeeId VARCHAR(255) PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  adress VARCHAR(255) NOT NULL,
+  phonenumber VARCHAR(255) NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  hireDate DATE NOT NULL,
+  jobTitle VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE EmployeeSchedule
+(
+  employeeId VARCHAR(255) NOT NULL,
+  shiftDate DATE NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  shiftResponsibilities VARCHAR(255) NOT NULL,
+  PRIMARY KEY (employeeId, shiftDate),
+  FOREIGN KEY (employeeId) REFERENCES Employee(employeeId) ON DELETE CASCADE
+);
+
+CREATE TABLE Computer
+(
+  computerId VARCHAR(255) PRIMARY KEY,
+  cpu VARCHAR(255) NOT NULL,
+  gpu VARCHAR(255) NOT NULL,
+  ram INT NOT NULL,
+  dataStorage VARCHAR(255) NOT NULL,
+  reserved BIT NOT NULL
+);
+CREATE TABLE Reservation
+(
+  computerId VARCHAR(255) NOT NULL,
+  timeDate DATE NOT NULL,
+  customerId VARCHAR(255) NULL,
+  employeeId VARCHAR(255) NULL,
+  PRIMARY KEY (computerId, timeDate),
+  FOREIGN KEY (computerId) REFERENCES Computer(computerId),
+  FOREIGN KEY (customerId) REFERENCES Customer(customerId) ON DELETE SET NULL,
+  FOREIGN KEY (employeeId) REFERENCES Employee(employeeId) ON DELETE SET NULL
+);
+
+CREATE TABLE Game
+(
+  gameId VARCHAR(255) PRIMARY KEY,
+  computerId VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  genre VARCHAR(255) NOT NULL,
+  FOREIGN KEY (computerId) REFERENCES Computer(computerId) ON DELETE CASCADE,
+  UNIQUE (computerId, title)
+);
