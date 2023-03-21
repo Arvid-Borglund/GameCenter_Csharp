@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameCenter", "..\C#FormsU1\GameCenter.csproj", "{2847FA43-FF76-4A7F-8EA8-E0AA946110E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatGPT4.0ConsoleApp", "..\C#ConsoleU2\ChatGPT4.0ConsoleApp.csproj", "{B65492A7-6553-4BEB-8599-9A3B349833CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2847FA43-FF76-4A7F-8EA8-E0AA946110E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2847FA43-FF76-4A7F-8EA8-E0AA946110E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2847FA43-FF76-4A7F-8EA8-E0AA946110E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2847FA43-FF76-4A7F-8EA8-E0AA946110E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B65492A7-6553-4BEB-8599-9A3B349833CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65492A7-6553-4BEB-8599-9A3B349833CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65492A7-6553-4BEB-8599-9A3B349833CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B65492A7-6553-4BEB-8599-9A3B349833CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD7AF1CB-1338-44E2-B49B-BBF01BD389F7}
+	EndGlobalSection
+EndGlobal
