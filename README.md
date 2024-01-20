@@ -13,6 +13,6 @@ I put a lot of time and effort into everything from the database structure to th
 There are of course things that I would have done differently today but this was my first time coding with C#, and I experimented with stuff outside of the curriculum and learned a lot. 
 ChatGPT 3.0 was used as a tool/ support during development and a lot of the methods are co-written and have been revised multiple times with and without AI support, but the database structure, program architecture, design and app idea was all me. 
 
-In the resources folder in the Forms-project, the database structure, my business rules and an sort of UML can be viewed.
+In the resources folder in the Forms-project, the database structure, my business rules and an sort of UML can be viewed, looking at it now I have managed to reverse the cardinalities in the UML and it is not a fully correct usage of UML but aims to provide a model showing the database logic.
 
 (The console app included is not very interesting and was created solely with ChatGPT to practice AI use)-  
