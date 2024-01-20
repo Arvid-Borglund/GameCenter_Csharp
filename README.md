@@ -7,7 +7,7 @@ The system does not implement a full payment system, and is meant to be used wit
 
 This project was created for an LU course in program construction, integration/ configuration of ERP-systems and integration technologies. 
 ADO.NET and Entity Framework were used for the data exchange between the T-SQL database (handled with Microsoft SSMS) and the program. 
-I wanted to make the project as "modular" as possible and did this by creating interfaces and entity managers that was used with a factory pattern. 
+I wanted to make the project as "modular" as possible and did this by creating interfaces and entity managers that was used with a factory pattern (and a repository pattern). 
 
 I put a lot of time and effort into everything from the database structure to the design, reusability, and ease of maintenance of the program, I even created animations using GIMP (and code) to make the app more fun to use. 
 There are of course things that I would have done differently today but this was my first time coding with C#, and I experimented with stuff outside of the curriculum and learned a lot. 
