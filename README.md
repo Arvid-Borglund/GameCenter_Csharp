@@ -12,3 +12,5 @@ I wanted to make the project as "modular" as possible and did this by creating i
 I put a lot of time and effort into everything from the database structure to the design, reusability, and ease of maintenance of the program, I even created animations using GIMP (and code) to make the app more fun to use. 
 There are of course things that I would have done differently today but this was my first time coding with C#, and I experimented with stuff outside of the curriculum and learned a lot. 
 ChatGPT 3.0 was used as a tool/ support during development and a lot of the methods are co-written and have been revised multiple times with and without AI support, but the database structure, program architecture, design and app idea was all me. 
+
+(The console app included is not very interesting and was created solely with ChatGPT to practice AI use)-  
